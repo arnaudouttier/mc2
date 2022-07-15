@@ -153,6 +153,13 @@
   }
 }
 
+// Cover details pour les pages editos
+:is(.edito) .cover-details{
+  .cover-thumbnail{
+    grid-column: 1/3;
+  }
+}
+
 @media(min-width:1443px){
   .cover-details{
     width: 1320px;
