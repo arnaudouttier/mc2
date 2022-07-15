@@ -2,12 +2,11 @@
 
 @use "abstracts/variables";
 
-
-/* Base */ 
+/* Base */
 
 @use "base/global";
 
-/* Components */ 
+/* Components */
 
 @use "components/site-navigation";
 @use "components/contact-social";
@@ -18,15 +17,15 @@
 @use "components/affiche-list";
 @use "components/buttons";
 
-
-/* Commons */ 
+/* Commons */
 
 @use "commons/header";
 @use "commons/footer";
 
 /* Layout */
+@use "layout/grid";
 
-/* Pages */ 
+/* Pages */
 
 @use "pages/agenda";
 @use "pages/news";
