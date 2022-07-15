@@ -1,0 +1,251 @@
+/* SITE-HEADER */
+
+#site-header {
+  color: #fff;
+  padding-top: clamp(
+    28px,
+    calc(1.75rem + ((1vw - 3.75px) * 3.0047)),
+    60px
+  ); // 375vw to 1440px
+
+  // Site header de la homepage
+  &.homepage {
+    min-height: 720px;
+    display: grid;
+    grid-template-columns: min(90vw, 1320px);
+    justify-content: center;
+    align-content: space-between;
+    min-height: 720px;
+    background-image: url("../images/header/header-cover-desktop.png");
+    background-size: cover;
+    background-color: #071f5b;
+    padding-top: clamp(
+      28px,
+      calc(1.75rem + ((1vw - 3.75px) * 3.0047)),
+      50px
+    ); // 375vw to 1440px
+    padding-bottom: clamp(
+      33px,
+      calc(2.0625rem + ((1vw - 3.75px) * 5.6338)),
+      93px
+    ); // 375vw to 1440px
+
+    .cover-details-homepage {
+      .cover-title {
+        margin-bottom: 58px;
+
+        .cover-category {
+          font-size: 12px;
+          font-weight: 600;
+          line-height: 17px;
+          letter-spacing: 2px;
+          margin-bottom: 10px;
+          text-transform: uppercase;
+        }
+
+        .cover-name {
+          font-size: 52px;
+          font-weight: 700;
+          line-height: 64px;
+          letter-spacing: 0em;
+        }
+
+        .cover-link {
+          display: none;
+        }
+      }
+
+      .cover-date-month {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .cover-elipse {
+          width: 45px;
+          height: 45px;
+          background-color: #ffffff;
+          border-radius: 50%;
+        }
+
+        .cover-date {
+          display: flex;
+          align-items: center;
+
+          h3 {
+            position: relative;
+            font-weight: 700;
+            font-size: clamp(
+              50px,
+              calc(3.125rem + ((1vw - 3.75px) * 2.8169)),
+              80px
+            );
+            line-height: 76px;
+          }
+
+          h5 {
+            font-weight: 700;
+            font-size: clamp(16px, calc(1rem + ((1vw - 3.75px) * 0.939)), 26px);
+            line-height: 22px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transform: rotate(90deg) translate(-5px, 50%);
+          }
+        }
+      }
+    }
+  }
+
+  // Site header de la page spectacle
+  &.spectacles {
+    min-height: 1380px;
+    background-color: #071f5b;
+
+    .site-navigation {
+      width: min(90vw, 1320px);
+      margin-inline: auto;
+      margin-bottom: clamp(
+        163px,
+        calc(1.75rem + ((1vw - 3.75px) * 3.0047)),
+        211px
+      ); // 375vw to 1440px
+    }
+  }
+
+  // Site header des pages edito
+  &.edito {
+    background-color: #071f5b;
+
+    .site-navigation {
+      width: min(90vw, 1320px);
+      margin-inline: auto;
+      margin-bottom: clamp(
+        163px,
+        calc(10.1875rem + ((1vw - 3.75px) * 4.507)),
+        211px
+      ); // 375vw to 1440px
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  #site-header {
+    // Site header de la homepage
+    &.homepage {
+      padding-top: clamp(
+        28px,
+        calc(1.75rem + ((1vw - 3.75px) * 3.0047)),
+        50px
+      ); // 375vw to 1440px
+      padding-bottom: clamp(
+        33px,
+        calc(2.0625rem + ((1vw - 3.75px) * 5.6338)),
+        93px
+      ); // 375vw to 1440px
+
+      .cover-details-homepage {
+        display: flex;
+        justify-content: space-between;
+
+        .cover-title {
+          .cover-category {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+          }
+
+          .cover-name {
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 78px;
+            margin-bottom: 20px;
+          }
+
+          .cover-link {
+            display: inline-block;
+            font-weight: 700;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            position: relative;
+
+            &::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: -3px;
+              width: 100%;
+              height: 1px;
+              background-color: #ffffff;
+              opacity: 0;
+              transition: opacity 0.4s ease;
+            }
+
+            &:hover {
+              &::after {
+                opacity: 1;
+              }
+            }
+          }
+        }
+
+        .cover-date-month {
+          .cover-elipse {
+            display: none;
+          }
+
+          .cover-date {
+            h3 {
+              font-weight: 700;
+              line-height: 80px;
+              text-align: right;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+
+    // Site header de la page spectacle
+    &.spectacles {
+      min-height: 1080px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 120px;
+        background-color: #ffff;
+        bottom: 0px;
+        z-index: 1;
+      }
+
+      .cover-piece-date-prix,
+      .cover-thumbnail {
+        z-index: 10;
+      }
+    }
+
+    // Site header des pages edito
+    &.edito {
+      background-color: #071f5b;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 120px;
+        background-color: #ffff;
+        bottom: 0px;
+        z-index: 1;
+      }
+
+      .cover-thumbnail {
+        z-index: 10;
+      }
+    }
+  }
+}

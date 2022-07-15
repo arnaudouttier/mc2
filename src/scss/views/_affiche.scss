@@ -1,0 +1,12 @@
+.affiche{
+  &.homepage{
+    padding-top: clamp(42px, calc(2.625rem + ((1vw - 3.75px) * 5.446)), 100px); // 375vw to 1440vw
+    padding-bottom: clamp(47px, calc(2.9375rem + ((1vw - 3.75px) * 1.9718)), 68px); // 375vw to 1440vw
+  
+    h3{
+      font-weight: 700;
+      font-size: 36px;  
+      margin-bottom: clamp(42px, calc(2.625rem + ((1vw - 3.75px) * 5.446)), 100px); // 375vw to 1440vw
+    }
+  }
+}

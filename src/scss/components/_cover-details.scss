@@ -1,0 +1,162 @@
+// Cover details block
+
+.cover-details{
+  color: #ffffff;
+
+  .cover-title,.cover-date-category, .cover-piece-date-prix{
+    margin-inline: 20px;
+  }
+
+  .cover-title{
+    grid-area: cover-title ;
+    font-size: 52px;
+    color: #F7FE70;
+    margin-bottom: 37px;
+    font-weight: 700;
+    line-height: 64px;
+    max-width: 329px;
+  }
+
+  .cover-date-category{
+    grid-area: cover-date-category ;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+
+    h2{
+      transform: rotate(-90deg);
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 34px
+    }
+
+    .cover-date{
+      text-align: center;
+      padding-right: 28px;
+
+      .cover-ellipse{
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background-color: #ffffff;
+        border-radius: 50px;
+        margin-bottom: 16px;
+      }
+
+      h3{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 34px;
+
+        span{
+          display: block;
+        }
+      }
+    }
+  }
+
+  .cover-thumbnail{
+    grid-area: cover-thumbnail;
+    margin-bottom: 45px;
+  }
+
+  .cover-piece-date-prix{
+    grid-area: cover-piece-date-prix;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 34px;
+
+    ul{
+      margin-bottom: 21px;
+    }
+
+    li{
+      padding-block: 16px;
+
+      &:first-child{
+        padding-top: 0;
+      }
+
+      &:last-child{
+        padding-bottom: 0;
+      }
+
+      &:not(:first-child){
+        border-top: 1px solid #FFFFFF;
+      }
+
+      span{
+        font-weight: 700;
+      }
+    }
+  
+
+  .btn-reservation{
+    grid-area: btn-reservation;
+    width: 100%;
+    padding: 18px 10px!important;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    transform: translate(0,50%);
+    }
+  }
+}
+
+@media(min-width:572px){
+  .cover-details{
+
+    .cover-title{
+      max-width: 80%;
+    }
+  }
+}
+
+@media(min-width:1024px){
+  .cover-details{
+    display: grid;
+    grid-template-columns: 240px 1080px;
+    column-gap: 60px;
+    grid-template-areas: 
+      "cover-title cover-title"
+      "cover-date-category cover-thumbnail"
+      "cover-piece-date-prix cover-thumbnail"
+      "btn-reservation cover-thumbnail";
+    padding-left: 60px;
+    overflow: hidden;
+
+  .cover-title,.cover-date-category, .cover-piece-date-prix{
+    margin-inline: 0;
+  }
+
+  .cover-title{
+    max-width: initial;
+    margin-bottom: 68px;
+  }
+
+  .cover-date-category{
+    .cover-date{
+      padding: 0;
+    }
+  }
+
+  .cover-piece-date-prix{
+    ul{
+      margin-bottom: 21px;
+    }
+
+    .btn-reservation{
+      transform: initial;
+      width: 100%;
+    }
+  }
+  }
+}
+
+@media(min-width:1443px){
+  .cover-details{
+    width: 1320px;
+    margin-inline: auto;
+    padding-left: 0;
+  }
+}
