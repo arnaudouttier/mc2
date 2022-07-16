@@ -2,19 +2,18 @@
 
 .contact-social {
   padding-block: 20px;
-  border-top: 1px solid #D9D9D9;
-  
-  h4{
+
+  h4 {
     margin-bottom: 16px;
   }
 
-  .contact-social-list{
+  .contact-social-list {
     display: flex;
-    align-items: center;        
+    align-items: center;
     column-gap: 27px;
   }
 }
 
-:is(.footer-grid) .contact-social-list img{
+:is(.footer-grid) .contact-social-list img {
   filter: invert(1);
 }

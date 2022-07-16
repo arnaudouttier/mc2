@@ -16,6 +16,15 @@
 @use "components/edito-variant-1-block";
 @use "components/affiche-list";
 @use "components/buttons";
+@use "components/news";
+@use "components/video-saisons";
+@use "components/slider";
+@use "components/agenda";
+
+/* Main items */
+@use "components/contact-item";
+@use "components/share-item";
+@use "components/realisation-item";
 
 /* Commons */
 
@@ -30,10 +39,6 @@
 /* Pages */
 
 @use "pages/homepage";
-@use "pages/agenda";
-@use "pages/news";
-@use "pages/video-saisons";
-@use "pages/slider";
 @use "pages/edito";
 @use "pages/edito-2";
 @use "pages/edito-3";

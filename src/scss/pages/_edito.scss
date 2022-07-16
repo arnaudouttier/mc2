@@ -8,57 +8,6 @@
     padding-top: 60px;
     padding-bottom: 75px;
     color: #000000;
-
-    .grid-cl-left {
-      .grid-cl-left-title {
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 17px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        margin-bottom: 25px;
-      }
-
-      .grid-cl-left-item {
-        h4,
-        p {
-          font-size: 16px;
-          line-height: 34px;
-        }
-
-        h4 {
-          font-weight: 700;
-        }
-
-        p {
-          font-weight: 400;
-        }
-      }
-    }
-
-    .grid-cl-right {
-      .grid-cl-right-item {
-        &.share {
-          display: flex;
-          align-items: center;
-          column-gap: 10px;
-
-          .share-icon {
-            width: 40px;
-            height: 40px;
-            background: rgba(217, 217, 217, 0.301);
-            display: flex;
-            place-content: center;
-          }
-
-          h5 {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 28px;
-          }
-        }
-      }
-    }
   }
 }
 
