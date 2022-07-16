@@ -71,6 +71,12 @@ body {
   display: none;
 }
 
+:is(#site-header.spectacles, #site-header.edito) .site-navigation {
+  width: min(90vw, 1320px);
+  margin-inline: auto;
+  margin-bottom: clamp(163px, 1.75rem + 3.0047vw - 11.2676px, 211px);
+}
+
 @media (min-width: 1440px) {
   .site-navigation .navigation-mobile {
     display: none;
@@ -632,20 +638,12 @@ body {
 
 #site-header {
   color: #fff;
-  padding-top: clamp(28px, 1.75rem + 3.0047vw - 11.2676px, 60px);
 }
 
 #site-header.homepage {
-  min-height: 720px;
-  min-height: 720px;
   background-color: #071f5b;
   background-image: url("header-cover-desktop.7bce4021.png");
   background-size: cover;
-  grid-template-columns: min(90vw, 1320px);
-  place-content: space-between center;
-  padding-top: clamp(28px, 1.75rem + 3.0047vw - 11.2676px, 50px);
-  padding-bottom: clamp(33px, 2.0625rem + 5.6338vw - 21.1268px, 93px);
-  display: grid;
 }
 
 #site-header.homepage .cover-details-homepage .cover-title {
@@ -706,52 +704,30 @@ body {
   transform: rotate(90deg)translate(-5px, 50%);
 }
 
-#site-header.spectacles {
-  min-height: 1380px;
+#site-header.spectacles, #site-header.edito {
   background-color: #071f5b;
-}
-
-#site-header.spectacles .site-navigation {
-  width: min(90vw, 1320px);
-  margin-inline: auto;
-  margin-bottom: clamp(163px, 1.75rem + 3.0047vw - 11.2676px, 211px);
-}
-
-#site-header.edito {
-  background-color: #071f5b;
-}
-
-#site-header.edito .site-navigation {
-  width: min(90vw, 1320px);
-  margin-inline: auto;
-  margin-bottom: clamp(163px, 10.1875rem + 4.507vw - 16.9012px, 211px);
 }
 
 @media (min-width: 1024px) {
-  #site-header.homepage {
-    padding-top: clamp(28px, 1.75rem + 3.0047vw - 11.2676px, 50px);
-    padding-bottom: clamp(33px, 2.0625rem + 5.6338vw - 21.1268px, 93px);
-  }
-
-  #site-header.homepage .cover-details-homepage {
+  #site-header .cover-details-homepage {
     justify-content: space-between;
     display: flex;
   }
 
-  #site-header.homepage .cover-details-homepage .cover-title .cover-category {
+  #site-header .cover-details-homepage .cover-title .cover-category {
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
   }
 
-  #site-header.homepage .cover-details-homepage .cover-title .cover-name {
+  #site-header .cover-details-homepage .cover-title .cover-name {
     margin-bottom: 20px;
     font-size: 56px;
     font-weight: 700;
     line-height: 78px;
   }
 
-  #site-header.homepage .cover-details-homepage .cover-title .cover-link {
+  #site-header .cover-details-homepage .cover-title .cover-link {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -759,7 +735,7 @@ body {
     position: relative;
   }
 
-  #site-header.homepage .cover-details-homepage .cover-title .cover-link:after {
+  #site-header .cover-details-homepage .cover-title .cover-link:after {
     content: "";
     width: 100%;
     height: 1px;
@@ -771,15 +747,15 @@ body {
     left: 0;
   }
 
-  #site-header.homepage .cover-details-homepage .cover-title .cover-link:hover:after {
+  #site-header .cover-details-homepage .cover-title .cover-link:hover:after {
     opacity: 1;
   }
 
-  #site-header.homepage .cover-details-homepage .cover-date-month .cover-elipse {
+  #site-header .cover-details-homepage .cover-date-month .cover-elipse {
     display: none;
   }
 
-  #site-header.homepage .cover-details-homepage .cover-date-month .cover-date h3 {
+  #site-header .cover-details-homepage .cover-date-month .cover-date h3 {
     text-align: right;
     text-transform: uppercase;
     font-weight: 700;
@@ -787,7 +763,6 @@ body {
   }
 
   #site-header.spectacles {
-    min-height: 1080px;
     position: relative;
   }
 
@@ -807,7 +782,6 @@ body {
   }
 
   #site-header.edito {
-    background-color: #071f5b;
     position: relative;
   }
 
@@ -1017,6 +991,29 @@ body {
     column-gap: 25px;
     padding-left: 20px;
     display: flex;
+  }
+}
+
+#site-header {
+  padding-top: clamp(28px, 1.75rem + 3.0047vw - 11.2676px, 60px);
+}
+
+#site-header.homepage {
+  min-height: 720px;
+  grid-template-columns: min(90vw, 1320px);
+  place-content: space-between center;
+  padding-top: clamp(28px, 1.75rem + 3.0047vw - 11.2676px, 50px);
+  padding-bottom: clamp(33px, 2.0625rem + 5.6338vw - 21.1268px, 93px);
+  display: grid;
+}
+
+#site-header.spectacle {
+  min-height: 1380px;
+}
+
+@media (min-width: 1024px) {
+  #site-header.spectacles {
+    min-height: 1080px;
   }
 }
 

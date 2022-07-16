@@ -1,4 +1,4 @@
-// Site navigation block
+/* Site navigation block */
 
 .site-navigation {
   display: flex;
@@ -34,6 +34,16 @@
   .navigation {
     display: none;
   }
+}
+
+:is(#site-header.spectacles, #site-header.edito) .site-navigation {
+  width: min(90vw, 1320px);
+  margin-inline: auto;
+  margin-bottom: clamp(
+    163px,
+    calc(1.75rem + ((1vw - 3.75px) * 3.0047)),
+    211px
+  ); // 375vw to 1440px
 }
 
 @media (min-width: 1440px) {

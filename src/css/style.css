@@ -48,6 +48,7 @@ body {
   background-color: #fff;
 }
 
+/* Site navigation block */
 .site-navigation {
   display: flex;
   justify-content: space-between;
@@ -72,6 +73,12 @@ body {
 }
 .site-navigation .navigation {
   display: none;
+}
+
+:is(#site-header.spectacles, #site-header.edito) .site-navigation {
+  width: min(90vw, 1320px);
+  margin-inline: auto;
+  margin-bottom: clamp(163px, 1.75rem + (1vw - 3.75px) * 3.0047, 211px);
 }
 
 @media (min-width: 1440px) {
@@ -567,20 +574,14 @@ body {
 /* SITE-HEADER */
 #site-header {
   color: #fff;
-  padding-top: clamp(28px, 1.75rem + (1vw - 3.75px) * 3.0047, 60px);
+  /* Site header de la homepage */
+  /* Site header de la page spectacle */
+  /* Site header des pages edito */
 }
 #site-header.homepage {
-  min-height: 720px;
-  display: grid;
-  grid-template-columns: min(90vw, 1320px);
-  justify-content: center;
-  align-content: space-between;
-  min-height: 720px;
   background-image: url("../images/header/header-cover-desktop.png");
   background-size: cover;
   background-color: #071f5b;
-  padding-top: clamp(28px, 1.75rem + (1vw - 3.75px) * 3.0047, 50px);
-  padding-bottom: clamp(33px, 2.0625rem + (1vw - 3.75px) * 5.6338, 93px);
 }
 #site-header.homepage .cover-details-homepage .cover-title {
   margin-bottom: 58px;
@@ -632,44 +633,32 @@ body {
   transform: rotate(90deg) translate(-5px, 50%);
 }
 #site-header.spectacles {
-  min-height: 1380px;
   background-color: #071f5b;
-}
-#site-header.spectacles .site-navigation {
-  width: min(90vw, 1320px);
-  margin-inline: auto;
-  margin-bottom: clamp(163px, 1.75rem + (1vw - 3.75px) * 3.0047, 211px);
 }
 #site-header.edito {
   background-color: #071f5b;
 }
-#site-header.edito .site-navigation {
-  width: min(90vw, 1320px);
-  margin-inline: auto;
-  margin-bottom: clamp(163px, 10.1875rem + (1vw - 3.75px) * 4.507, 211px);
-}
 
 @media (min-width: 1024px) {
-  #site-header.homepage {
-    padding-top: clamp(28px, 1.75rem + (1vw - 3.75px) * 3.0047, 50px);
-    padding-bottom: clamp(33px, 2.0625rem + (1vw - 3.75px) * 5.6338, 93px);
+  #site-header {
+    /* Site header de la page spectacle */
   }
-  #site-header.homepage .cover-details-homepage {
+  #site-header .cover-details-homepage {
     display: flex;
     justify-content: space-between;
   }
-  #site-header.homepage .cover-details-homepage .cover-title .cover-category {
+  #site-header .cover-details-homepage .cover-title .cover-category {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
   }
-  #site-header.homepage .cover-details-homepage .cover-title .cover-name {
+  #site-header .cover-details-homepage .cover-title .cover-name {
     font-weight: 700;
     font-size: 56px;
     line-height: 78px;
     margin-bottom: 20px;
   }
-  #site-header.homepage .cover-details-homepage .cover-title .cover-link {
+  #site-header .cover-details-homepage .cover-title .cover-link {
     display: inline-block;
     font-weight: 700;
     font-weight: 400;
@@ -677,7 +666,7 @@ body {
     line-height: 24px;
     position: relative;
   }
-  #site-header.homepage .cover-details-homepage .cover-title .cover-link::after {
+  #site-header .cover-details-homepage .cover-title .cover-link::after {
     content: "";
     position: absolute;
     left: 0;
@@ -688,20 +677,19 @@ body {
     opacity: 0;
     transition: opacity 0.4s ease;
   }
-  #site-header.homepage .cover-details-homepage .cover-title .cover-link:hover::after {
+  #site-header .cover-details-homepage .cover-title .cover-link:hover::after {
     opacity: 1;
   }
-  #site-header.homepage .cover-details-homepage .cover-date-month .cover-elipse {
+  #site-header .cover-details-homepage .cover-date-month .cover-elipse {
     display: none;
   }
-  #site-header.homepage .cover-details-homepage .cover-date-month .cover-date h3 {
+  #site-header .cover-details-homepage .cover-date-month .cover-date h3 {
     font-weight: 700;
     line-height: 80px;
     text-align: right;
     text-transform: uppercase;
   }
   #site-header.spectacles {
-    min-height: 1080px;
     position: relative;
   }
   #site-header.spectacles::after {
@@ -719,7 +707,6 @@ body {
     z-index: 10;
   }
   #site-header.edito {
-    background-color: #071f5b;
     position: relative;
   }
   #site-header.edito::after {
@@ -922,6 +909,33 @@ body {
     column-gap: 25px;
     padding-block: 34px;
     padding-left: 20px;
+  }
+}
+/* Header Layout */
+#site-header {
+  padding-top: clamp(28px, 1.75rem + (1vw - 3.75px) * 3.0047, 60px);
+  /* Site header de la homepage */
+  /* Site header pages Spectacles Edito */
+}
+#site-header.homepage {
+  min-height: 720px;
+  display: grid;
+  grid-template-columns: min(90vw, 1320px);
+  justify-content: center;
+  align-content: space-between;
+  padding-top: clamp(28px, 1.75rem + (1vw - 3.75px) * 3.0047, 50px);
+  padding-bottom: clamp(33px, 2.0625rem + (1vw - 3.75px) * 5.6338, 93px);
+}
+#site-header.spectacle {
+  min-height: 1380px;
+}
+
+@media (min-width: 1024px) {
+  #site-header {
+    /* Site header pages Spectacles */
+  }
+  #site-header.spectacles {
+    min-height: 1080px;
   }
 }
 /* Main grid */
