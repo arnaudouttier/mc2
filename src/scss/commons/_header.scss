@@ -7,70 +7,6 @@
     background-image: url("../images/header/header-cover-desktop.png");
     background-size: cover;
     background-color: #071f5b;
-
-    .cover-details-homepage {
-      .cover-title {
-        margin-bottom: 58px;
-
-        .cover-category {
-          font-size: 12px;
-          font-weight: 600;
-          line-height: 17px;
-          letter-spacing: 2px;
-          margin-bottom: 10px;
-          text-transform: uppercase;
-        }
-
-        .cover-name {
-          font-size: 52px;
-          font-weight: 700;
-          line-height: 64px;
-          letter-spacing: 0em;
-        }
-
-        .cover-link {
-          display: none;
-        }
-      }
-
-      .cover-date-month {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .cover-elipse {
-          width: 45px;
-          height: 45px;
-          background-color: #ffffff;
-          border-radius: 50%;
-        }
-
-        .cover-date {
-          display: flex;
-          align-items: center;
-
-          h3 {
-            position: relative;
-            font-weight: 700;
-            font-size: clamp(
-              50px,
-              calc(3.125rem + ((1vw - 3.75px) * 2.8169)),
-              80px
-            );
-            line-height: 76px;
-          }
-
-          h5 {
-            font-weight: 700;
-            font-size: clamp(16px, calc(1rem + ((1vw - 3.75px) * 0.939)), 26px);
-            line-height: 22px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            transform: rotate(90deg) translate(-5px, 50%);
-          }
-        }
-      }
-    }
   }
 
   /* Site header de la page spectacle */
@@ -86,68 +22,6 @@
 
 @media (min-width: 1024px) {
   #site-header {
-    .cover-details-homepage {
-      display: flex;
-      justify-content: space-between;
-
-      .cover-title {
-        .cover-category {
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 22px;
-        }
-
-        .cover-name {
-          font-weight: 700;
-          font-size: 56px;
-          line-height: 78px;
-          margin-bottom: 20px;
-        }
-
-        .cover-link {
-          display: inline-block;
-          font-weight: 700;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 24px;
-          position: relative;
-
-          &::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -3px;
-            width: 100%;
-            height: 1px;
-            background-color: #ffffff;
-            opacity: 0;
-            transition: opacity 0.4s ease;
-          }
-
-          &:hover {
-            &::after {
-              opacity: 1;
-            }
-          }
-        }
-      }
-
-      .cover-date-month {
-        .cover-elipse {
-          display: none;
-        }
-
-        .cover-date {
-          h3 {
-            font-weight: 700;
-            line-height: 80px;
-            text-align: right;
-            text-transform: uppercase;
-          }
-        }
-      }
-    }
-
     /* Site header de la page spectacle */
     &.spectacles {
       position: relative;

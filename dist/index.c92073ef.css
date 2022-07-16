@@ -265,15 +265,73 @@ body {
   }
 }
 
-.cover-details {
+:is(#site-header.homepage) .cover-details .cover-title {
+  margin-bottom: 58px;
+}
+
+:is(#site-header.homepage) .cover-details .cover-title .cover-category {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 17px;
+}
+
+:is(#site-header.homepage) .cover-details .cover-title .cover-name {
+  letter-spacing: 0;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+:is(#site-header.homepage) .cover-details .cover-title .cover-link {
+  display: none;
+}
+
+:is(#site-header.homepage) .cover-details .cover-date-month {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+:is(#site-header.homepage) .cover-details .cover-date-month .cover-elipse {
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+:is(#site-header.homepage) .cover-details .cover-date-month .cover-date {
+  align-items: center;
+  display: flex;
+}
+
+:is(#site-header.homepage) .cover-details .cover-date-month .cover-date h3 {
+  font-size: clamp(50px, 3.125rem + 2.8169vw - 10.5634px, 80px);
+  font-weight: 700;
+  line-height: 76px;
+  position: relative;
+}
+
+:is(#site-header.homepage) .cover-details .cover-date-month .cover-date h5 {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: clamp(16px, 1rem + .939vw - 3.52125px, 26px);
+  font-weight: 700;
+  line-height: 22px;
+  transform: rotate(90deg)translate(-5px, 50%);
+}
+
+:is(#site-header.spectacles, #site-header.edito) .cover-details {
   color: #fff;
 }
 
-.cover-details .cover-title, .cover-details .cover-date-category, .cover-details .cover-piece-date-prix {
+:is(#site-header.spectacles, #site-header.edito) .cover-details .cover-title, :is(#site-header.spectacles, #site-header.edito) .cover-details .cover-date-category, :is(#site-header.spectacles, #site-header.edito) .cover-details .cover-piece-date-prix {
   margin-inline: 20px;
 }
 
-.cover-details .cover-title {
+:is(#site-header.spectacles, #site-header.edito) .cover-details .cover-title {
   color: #f7fe70;
   max-width: 329px;
   grid-area: cover-title;
@@ -283,26 +341,26 @@ body {
   line-height: 64px;
 }
 
-.cover-details .cover-date-category {
+:is(#site-header.spectacles, #site-header.edito) .cover-details .cover-date-category {
   grid-area: cover-date-category;
   justify-content: space-between;
   margin-bottom: 45px;
   display: flex;
 }
 
-.cover-details .cover-date-category h2 {
+:is(#site-header.spectacles, #site-header.edito) .cover-details .cover-date-category h2 {
   font-size: 24px;
   font-weight: 700;
   line-height: 34px;
   transform: rotate(-90deg);
 }
 
-.cover-details .cover-date-category .cover-date {
+:is(#site-header.spectacles, #site-header.edito) .cover-details .cover-date-category .cover-date {
   text-align: center;
   padding-right: 28px;
 }
 
-.cover-details .cover-date-category .cover-date .cover-ellipse {
+:is(#site-header.spectacles, #site-header.edito) .cover-details .cover-date-category .cover-date .cover-ellipse {
   width: 25px;
   height: 25px;
   background-color: #fff;
@@ -311,53 +369,53 @@ body {
   display: inline-block;
 }
 
-.cover-details .cover-date-category .cover-date h3 {
+:is(#site-header.spectacles, #site-header.edito) .cover-details .cover-date-category .cover-date h3 {
   font-size: 24px;
   font-weight: 700;
   line-height: 34px;
 }
 
-.cover-details .cover-date-category .cover-date h3 span {
+:is(#site-header.spectacles, #site-header.edito) .cover-details .cover-date-category .cover-date h3 span {
   display: block;
 }
 
-.cover-details .cover-thumbnail {
+:is(#site-header.spectacles, #site-header.edito) .cover-details .cover-thumbnail {
   grid-area: cover-thumbnail;
   margin-bottom: 45px;
 }
 
-.cover-details .cover-piece-date-prix {
+:is(#site-header.spectacles, #site-header.edito) .cover-details .cover-piece-date-prix {
   grid-area: cover-piece-date-prix;
   font-size: 16px;
   font-weight: 400;
   line-height: 34px;
 }
 
-.cover-details .cover-piece-date-prix ul {
+:is(#site-header.spectacles, #site-header.edito) .cover-details .cover-piece-date-prix ul {
   margin-bottom: 21px;
 }
 
-.cover-details .cover-piece-date-prix li {
+:is(#site-header.spectacles, #site-header.edito) .cover-details .cover-piece-date-prix li {
   padding-block: 16px;
 }
 
-.cover-details .cover-piece-date-prix li:first-child {
+:is(#site-header.spectacles, #site-header.edito) .cover-details .cover-piece-date-prix li:first-child {
   padding-top: 0;
 }
 
-.cover-details .cover-piece-date-prix li:last-child {
+:is(#site-header.spectacles, #site-header.edito) .cover-details .cover-piece-date-prix li:last-child {
   padding-bottom: 0;
 }
 
-.cover-details .cover-piece-date-prix li:not(:first-child) {
+:is(#site-header.spectacles, #site-header.edito) .cover-details .cover-piece-date-prix li:not(:first-child) {
   border-top: 1px solid #fff;
 }
 
-.cover-details .cover-piece-date-prix li span {
+:is(#site-header.spectacles, #site-header.edito) .cover-details .cover-piece-date-prix li span {
   font-weight: 700;
 }
 
-.cover-details .cover-piece-date-prix .btn-reservation {
+:is(#site-header.spectacles, #site-header.edito) .cover-details .cover-piece-date-prix .btn-reservation {
   width: 100%;
   grid-area: btn-reservation;
   font-size: 16px;
@@ -368,13 +426,66 @@ body {
 }
 
 @media (min-width: 572px) {
-  .cover-details .cover-title {
+  :is(#site-header.spectacles, #site-header.edito) .cover-details .cover-title {
     max-width: 80%;
   }
 }
 
 @media (min-width: 1024px) {
-  .cover-details {
+  :is(#site-header.spectacles, #site-header.edito) .cover-details {
+    justify-content: space-between;
+    display: flex;
+  }
+
+  :is(#site-header.spectacles, #site-header.edito) .cover-details .cover-title .cover-category {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  :is(#site-header.spectacles, #site-header.edito) .cover-details .cover-title .cover-name {
+    margin-bottom: 20px;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 78px;
+  }
+
+  :is(#site-header.spectacles, #site-header.edito) .cover-details .cover-title .cover-link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    display: inline-block;
+    position: relative;
+  }
+
+  :is(#site-header.spectacles, #site-header.edito) .cover-details .cover-title .cover-link:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    opacity: 0;
+    background-color: #fff;
+    transition: opacity .4s;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+  }
+
+  :is(#site-header.spectacles, #site-header.edito) .cover-details .cover-title .cover-link:hover:after {
+    opacity: 1;
+  }
+
+  :is(#site-header.spectacles, #site-header.edito) .cover-details .cover-date-month .cover-elipse {
+    display: none;
+  }
+
+  :is(#site-header.spectacles, #site-header.edito) .cover-details .cover-date-month .cover-date h3 {
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 80px;
+  }
+
+  :is(#site-header.spectacles, #site-header.edito) .cover-details {
     grid-template-columns: 240px 1080px;
     grid-template-areas: "cover-title cover-title"
                          "cover-date-category cover-thumbnail"
@@ -386,35 +497,35 @@ body {
     overflow: hidden;
   }
 
-  .cover-details .cover-title, .cover-details .cover-date-category, .cover-details .cover-piece-date-prix {
+  :is(#site-header.spectacles, #site-header.edito) .cover-details .cover-title, :is(#site-header.spectacles, #site-header.edito) .cover-details .cover-date-category, :is(#site-header.spectacles, #site-header.edito) .cover-details .cover-piece-date-prix {
     margin-inline: 0;
   }
 
-  .cover-details .cover-title {
+  :is(#site-header.spectacles, #site-header.edito) .cover-details .cover-title {
     max-width: initial;
     margin-bottom: 68px;
   }
 
-  .cover-details .cover-date-category .cover-date {
+  :is(#site-header.spectacles, #site-header.edito) .cover-details .cover-date-category .cover-date {
     padding: 0;
   }
 
-  .cover-details .cover-piece-date-prix ul {
+  :is(#site-header.spectacles, #site-header.edito) .cover-details .cover-piece-date-prix ul {
     margin-bottom: 21px;
   }
 
-  .cover-details .cover-piece-date-prix .btn-reservation {
+  :is(#site-header.spectacles, #site-header.edito) .cover-details .cover-piece-date-prix .btn-reservation {
     transform: initial;
     width: 100%;
   }
-}
 
-:is(.edito) .cover-details .cover-thumbnail {
-  grid-column: 1 / 3;
+  :is(#site-header.edito) .cover-details .cover-thumbnail {
+    grid-column: 1 / 3;
+  }
 }
 
 @media (min-width: 1443px) {
-  .cover-details {
+  :is(#site-header.spectacles, #site-header.edito) .cover-details {
     width: 1320px;
     margin-inline: auto;
     padding-left: 0;
@@ -653,122 +764,11 @@ body {
   background-size: cover;
 }
 
-#site-header.homepage .cover-details-homepage .cover-title {
-  margin-bottom: 58px;
-}
-
-#site-header.homepage .cover-details-homepage .cover-title .cover-category {
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 17px;
-}
-
-#site-header.homepage .cover-details-homepage .cover-title .cover-name {
-  letter-spacing: 0;
-  font-size: 52px;
-  font-weight: 700;
-  line-height: 64px;
-}
-
-#site-header.homepage .cover-details-homepage .cover-title .cover-link {
-  display: none;
-}
-
-#site-header.homepage .cover-details-homepage .cover-date-month {
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-}
-
-#site-header.homepage .cover-details-homepage .cover-date-month .cover-elipse {
-  width: 45px;
-  height: 45px;
-  background-color: #fff;
-  border-radius: 50%;
-}
-
-#site-header.homepage .cover-details-homepage .cover-date-month .cover-date {
-  align-items: center;
-  display: flex;
-}
-
-#site-header.homepage .cover-details-homepage .cover-date-month .cover-date h3 {
-  font-size: clamp(50px, 3.125rem + 2.8169vw - 10.5634px, 80px);
-  font-weight: 700;
-  line-height: 76px;
-  position: relative;
-}
-
-#site-header.homepage .cover-details-homepage .cover-date-month .cover-date h5 {
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: clamp(16px, 1rem + .939vw - 3.52125px, 26px);
-  font-weight: 700;
-  line-height: 22px;
-  transform: rotate(90deg)translate(-5px, 50%);
-}
-
 #site-header.spectacles, #site-header.edito {
   background-color: #071f5b;
 }
 
 @media (min-width: 1024px) {
-  #site-header .cover-details-homepage {
-    justify-content: space-between;
-    display: flex;
-  }
-
-  #site-header .cover-details-homepage .cover-title .cover-category {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-  }
-
-  #site-header .cover-details-homepage .cover-title .cover-name {
-    margin-bottom: 20px;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 78px;
-  }
-
-  #site-header .cover-details-homepage .cover-title .cover-link {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    display: inline-block;
-    position: relative;
-  }
-
-  #site-header .cover-details-homepage .cover-title .cover-link:after {
-    content: "";
-    width: 100%;
-    height: 1px;
-    opacity: 0;
-    background-color: #fff;
-    transition: opacity .4s;
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-  }
-
-  #site-header .cover-details-homepage .cover-title .cover-link:hover:after {
-    opacity: 1;
-  }
-
-  #site-header .cover-details-homepage .cover-date-month .cover-elipse {
-    display: none;
-  }
-
-  #site-header .cover-details-homepage .cover-date-month .cover-date h3 {
-    text-align: right;
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 80px;
-  }
-
   #site-header.spectacles {
     position: relative;
   }
