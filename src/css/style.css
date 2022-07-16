@@ -245,7 +245,7 @@ body {
     max-width: 240px;
   }
 }
-/* Cover details block */
+/* Site Header -> Cover details block */
 /* Cover details pour la Home Page */
 :is(#site-header.homepage) .cover-details .cover-title {
   margin-bottom: 58px;
@@ -393,22 +393,22 @@ body {
 }
 @media (min-width: 1024px) {
   /* Cover details pour la Home Page */
-  :is(#site-header.spectacles, #site-header.edito) .cover-details {
+  :is(#site-header.homepage) .cover-details {
     display: flex;
     justify-content: space-between;
   }
-  :is(#site-header.spectacles, #site-header.edito) .cover-details .cover-title .cover-category {
+  :is(#site-header.homepage) .cover-details .cover-title .cover-category {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
   }
-  :is(#site-header.spectacles, #site-header.edito) .cover-details .cover-title .cover-name {
+  :is(#site-header.homepage) .cover-details .cover-title .cover-name {
     font-weight: 700;
     font-size: 56px;
     line-height: 78px;
     margin-bottom: 20px;
   }
-  :is(#site-header.spectacles, #site-header.edito) .cover-details .cover-title .cover-link {
+  :is(#site-header.homepage) .cover-details .cover-title .cover-link {
     display: inline-block;
     font-weight: 700;
     font-weight: 400;
@@ -416,7 +416,7 @@ body {
     line-height: 24px;
     position: relative;
   }
-  :is(#site-header.spectacles, #site-header.edito) .cover-details .cover-title .cover-link::after {
+  :is(#site-header.homepage) .cover-details .cover-title .cover-link::after {
     content: "";
     position: absolute;
     left: 0;
@@ -427,13 +427,13 @@ body {
     opacity: 0;
     transition: opacity 0.4s ease;
   }
-  :is(#site-header.spectacles, #site-header.edito) .cover-details .cover-title .cover-link:hover::after {
+  :is(#site-header.homepage) .cover-details .cover-title .cover-link:hover::after {
     opacity: 1;
   }
-  :is(#site-header.spectacles, #site-header.edito) .cover-details .cover-date-month .cover-elipse {
+  :is(#site-header.homepage) .cover-details .cover-date-month .cover-elipse {
     display: none;
   }
-  :is(#site-header.spectacles, #site-header.edito) .cover-details .cover-date-month .cover-date h3 {
+  :is(#site-header.homepage) .cover-details .cover-date-month .cover-date h3 {
     font-weight: 700;
     line-height: 80px;
     text-align: right;
@@ -473,7 +473,7 @@ body {
   }
 }
 @media (min-width: 1443px) {
-  /* Cover details pour les pages edito et spectacles */ /* Cover details pour les pages edito et spectacles */
+  /* Cover details pour les pages edito et spectacles */
   :is(#site-header.spectacles, #site-header.edito) .cover-details {
     width: 1320px;
     margin-inline: auto;

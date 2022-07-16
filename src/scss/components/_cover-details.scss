@@ -1,4 +1,4 @@
-/* Cover details block */
+/* Site Header -> Cover details block */
 
 /* Cover details pour la Home Page */
 :is(#site-header.homepage) .cover-details {
@@ -181,7 +181,7 @@
 
 @media (min-width: 1024px) {
   /* Cover details pour la Home Page */
-  :is(#site-header.spectacles, #site-header.edito) .cover-details {
+  :is(#site-header.homepage) .cover-details {
     display: flex;
     justify-content: space-between;
 
@@ -294,7 +294,7 @@
 }
 
 @media (min-width: 1443px) {
-  /* Cover details pour les pages edito et spectacles */ /* Cover details pour les pages edito et spectacles */
+  /* Cover details pour les pages edito et spectacles */
   :is(#site-header.spectacles, #site-header.edito) .cover-details {
     width: 1320px;
     margin-inline: auto;
