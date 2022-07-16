@@ -690,7 +690,7 @@ body {
 #site-header {
   color: #fff;
   /* Site header de la homepage */
-  /* Site header de la page spectacle */
+  /* Site header de la page spectacles */
   /* Site header des pages edito */
 }
 #site-header.homepage {
@@ -707,7 +707,7 @@ body {
 
 @media (min-width: 1024px) {
   #site-header {
-    /* Site header de la page spectacle */
+    /* Site header de la page spectacles */
   }
   #site-header.spectacles {
     position: relative;
