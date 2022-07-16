@@ -1,40 +1,42 @@
-// Cover details block
+/* Cover details block */
 
-.cover-details{
+.cover-details {
   color: #ffffff;
 
-  .cover-title,.cover-date-category, .cover-piece-date-prix{
+  .cover-title,
+  .cover-date-category,
+  .cover-piece-date-prix {
     margin-inline: 20px;
   }
 
-  .cover-title{
-    grid-area: cover-title ;
+  .cover-title {
+    grid-area: cover-title;
     font-size: 52px;
-    color: #F7FE70;
+    color: #f7fe70;
     margin-bottom: 37px;
     font-weight: 700;
     line-height: 64px;
     max-width: 329px;
   }
 
-  .cover-date-category{
-    grid-area: cover-date-category ;
+  .cover-date-category {
+    grid-area: cover-date-category;
     display: flex;
     justify-content: space-between;
     margin-bottom: 45px;
 
-    h2{
+    h2 {
       transform: rotate(-90deg);
       font-weight: 700;
       font-size: 24px;
-      line-height: 34px
+      line-height: 34px;
     }
 
-    .cover-date{
+    .cover-date {
       text-align: center;
       padding-right: 28px;
 
-      .cover-ellipse{
+      .cover-ellipse {
         display: inline-block;
         width: 25px;
         height: 25px;
@@ -43,81 +45,79 @@
         margin-bottom: 16px;
       }
 
-      h3{
+      h3 {
         font-weight: 700;
         font-size: 24px;
         line-height: 34px;
 
-        span{
+        span {
           display: block;
         }
       }
     }
   }
 
-  .cover-thumbnail{
+  .cover-thumbnail {
     grid-area: cover-thumbnail;
     margin-bottom: 45px;
   }
 
-  .cover-piece-date-prix{
+  .cover-piece-date-prix {
     grid-area: cover-piece-date-prix;
     font-weight: 400;
     font-size: 16px;
     line-height: 34px;
 
-    ul{
+    ul {
       margin-bottom: 21px;
     }
 
-    li{
+    li {
       padding-block: 16px;
 
-      &:first-child{
+      &:first-child {
         padding-top: 0;
       }
 
-      &:last-child{
+      &:last-child {
         padding-bottom: 0;
       }
 
-      &:not(:first-child){
-        border-top: 1px solid #FFFFFF;
+      &:not(:first-child) {
+        border-top: 1px solid #ffffff;
       }
 
-      span{
+      span {
         font-weight: 700;
       }
     }
-  
 
-  .btn-reservation{
-    grid-area: btn-reservation;
-    width: 100%;
-    padding: 18px 10px!important;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    transform: translate(0,50%);
+    .btn-reservation {
+      grid-area: btn-reservation;
+      width: 100%;
+      padding: 18px 10px !important;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      transform: translate(0, 50%);
     }
   }
 }
 
-@media(min-width:572px){
-  .cover-details{
-
-    .cover-title{
+@media (min-width: 572px) {
+  .cover-details {
+    .cover-title {
       max-width: 80%;
     }
   }
 }
 
-@media(min-width:1024px){
-  .cover-details{
+@media (min-width: 1024px) {
+  .cover-details {
     display: grid;
     grid-template-columns: 240px 1080px;
     column-gap: 60px;
-    grid-template-areas: 
+    grid-template-areas:
       "cover-title cover-title"
       "cover-date-category cover-thumbnail"
       "cover-piece-date-prix cover-thumbnail"
@@ -125,43 +125,46 @@
     padding-left: 60px;
     overflow: hidden;
 
-  .cover-title,.cover-date-category, .cover-piece-date-prix{
-    margin-inline: 0;
-  }
-
-  .cover-title{
-    max-width: initial;
-    margin-bottom: 68px;
-  }
-
-  .cover-date-category{
-    .cover-date{
-      padding: 0;
-    }
-  }
-
-  .cover-piece-date-prix{
-    ul{
-      margin-bottom: 21px;
+    .cover-title,
+    .cover-date-category,
+    .cover-piece-date-prix {
+      margin-inline: 0;
     }
 
-    .btn-reservation{
-      transform: initial;
-      width: 100%;
+    .cover-title {
+      max-width: initial;
+      margin-bottom: 68px;
     }
-  }
+
+    .cover-date-category {
+      .cover-date {
+        padding: 0;
+      }
+    }
+
+    .cover-piece-date-prix {
+      ul {
+        margin-bottom: 21px;
+      }
+
+      .btn-reservation {
+        transform: initial;
+        width: 100%;
+      }
+    }
   }
 }
 
-// Cover details pour les pages editos
-:is(.edito) .cover-details{
-  .cover-thumbnail{
+/* Cover details pour les pages editos */
+
+:is(.edito) .cover-details {
+  .cover-thumbnail {
     grid-column: 1/3;
   }
 }
 
-@media(min-width:1443px){
-  .cover-details{
+@media (min-width: 1443px) {
+  .cover-details {
     width: 1320px;
     margin-inline: auto;
     padding-left: 0;

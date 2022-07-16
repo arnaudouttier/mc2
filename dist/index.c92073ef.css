@@ -486,18 +486,25 @@ body {
   background: #f3f3f3;
   grid-template-columns: min(90vw, 1320px);
   justify-content: center;
+  padding-top: clamp(42px, 2.625rem + 5.446vw - 20.4225px, 100px);
+  padding-bottom: clamp(59px, 3.6875rem + 5.7277vw - 21.4789px, 120px);
   display: grid;
 }
 
-.affiche.homepage {
-  padding-top: clamp(42px, 2.625rem + 5.446vw - 20.4225px, 100px);
-  padding-bottom: clamp(47px, 2.9375rem + 1.9718vw - 7.39425px, 68px);
+.affiche .affiche-header {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: clamp(42px, 2.625rem + 5.446vw - 20.4225px, 100px);
+  display: flex;
 }
 
-.affiche.homepage h3 {
-  margin-bottom: clamp(42px, 2.625rem + 5.446vw - 20.4225px, 100px);
+.affiche .affiche-header h3 {
   font-size: 36px;
   font-weight: 700;
+}
+
+.affiche .affiche-header .affiche-header-buttons {
+  display: none;
 }
 
 .affiche .affiche-list {
@@ -1140,6 +1147,10 @@ body {
   }
 }
 
+#main.homepage .affiche {
+  padding-bottom: clamp(47px, 2.9375rem + 1.9718vw - 7.39425px, 68px);
+}
+
 .agenda {
   background: #f3f3f3;
   grid-template-columns: min(90vw, 1320px);
@@ -1778,24 +1789,6 @@ body {
 .affiche.edito {
   color: #fff;
   background-color: #071f5b;
-  padding-top: 101px;
-  padding-bottom: clamp(59px, 3.6875rem + 5.7277vw - 21.4789px, 120px);
-}
-
-.affiche.edito .affiche-header {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 100px;
-  display: flex;
-}
-
-.affiche.edito .affiche-header h3 {
-  font-size: 36px;
-  font-weight: 700;
-}
-
-.affiche.edito .affiche-header .affiche-header-buttons {
-  display: none;
 }
 
 @media (min-width: 1024px) {
@@ -2033,24 +2026,6 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 28px;
-}
-
-.affiche.edito {
-  color: #fff;
-  background-color: #071f5b;
-  padding-bottom: 120px;
-}
-
-.affiche.edito .affiche-header {
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-}
-
-.affiche.edito .affiche-header .affiche-header-buttons {
-  align-items: center;
-  column-gap: 40px;
-  display: flex;
 }
 
 #main.spectacles {
@@ -2315,17 +2290,6 @@ body {
   padding-top: 60px;
   padding-bottom: 294px;
   display: grid;
-}
-
-.affiche.spectacles {
-  padding-top: 101px;
-  padding-bottom: clamp(59px, 3.6875rem + 5.7277vw - 21.4789px, 120px);
-}
-
-.affiche.spectacles h3 {
-  margin-bottom: 100px;
-  font-size: 36px;
-  font-weight: 700;
 }
 
 @media (min-width: 1200px) {

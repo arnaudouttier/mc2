@@ -1,4 +1,4 @@
-// #MAIN
+/* Edito 3 */
 
 #main {
   &.edito {
@@ -192,26 +192,6 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 28px;
-    }
-  }
-}
-
-.affiche {
-  &.edito {
-    background-color: #071f5b;
-    padding-bottom: 120px;
-    color: #ffffff;
-
-    .affiche-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .affiche-header-buttons {
-        display: flex;
-        align-items: center;
-        column-gap: 40px;
-      }
     }
   }
 }
