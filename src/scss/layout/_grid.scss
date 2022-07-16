@@ -7,13 +7,6 @@
     "grid-cl-left"
     "grid-cl-right";
 
-  .grid-cl-left,
-  .grid-cl-middle,
-  .grid-cl-right {
-    border-top: 1px solid #d9d9d9;
-    padding-top: 27px;
-  }
-
   .grid-cl-left {
     grid-area: grid-cl-left;
   }

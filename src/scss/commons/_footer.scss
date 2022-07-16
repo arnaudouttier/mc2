@@ -1,18 +1,11 @@
 // #SITE-FOOTER
 
 #site-footer {
-  display: grid;
-  grid-template-columns: min(90vw, 1320px);
-  justify-content: center;
   background-color: #000000;
   color: #fff;
 }
 
-.to-top {
-  display: flex;
-  justify-content: center;
-  padding: 37px 0 32px 0;
-}
+/* General Footer item */
 
 .footer-item {
   padding-block: 20px;
@@ -45,148 +38,105 @@
   }
 }
 
-.footer-grid {
-  // footer logo
+/* top top button */
 
-  .footer-logo {
-    grid-area: footer-logo;
-    padding-left: 0;
-    padding-block: 50px;
+.to-top {
+  display: flex;
+  justify-content: center;
+  padding: 37px 0 32px 0;
+}
 
-    img {
-      width: clamp(
-        100px,
-        calc(6.25rem + ((1vw - 3.75px) * 6.2911)),
-        167px
-      ); // 100px (375vw) to 167px (1440vw)
+/* footer logo */
+
+.footer-logo {
+  padding-left: 0;
+  padding-block: 50px;
+
+  img {
+    width: clamp(
+      100px,
+      calc(6.25rem + ((1vw - 3.75px) * 6.2911)),
+      167px
+    ); // 100px (375vw) to 167px (1440vw)
+  }
+}
+
+/* footer address */
+
+.address {
+  border-top: 0;
+  padding-top: 0;
+
+  .footer-title {
+    margin-bottom: 25px;
+  }
+  p {
+    max-width: 166px;
+  }
+}
+
+/* contact email phone */
+
+.contact-phone-email {
+  padding-left: 0;
+
+  .footer-title {
+    &:nth-child(1) {
+      margin-bottom: 27px;
     }
-  }
 
-  // grid column
-
-  .grid-columns-left {
-    grid-area: grid-column-left;
-  }
-
-  .grid-columns-middle {
-    grid-area: grid-column-middle;
-  }
-
-  .grid-columns-right {
-    grid-area: grid-column-right;
-  }
-
-  // footer address
-
-  .address {
-    grid-area: address;
-    border-top: 0;
-    padding-top: 0;
-
-    .footer-title {
+    &:nth-child(3) {
       margin-bottom: 25px;
     }
-    p {
-      max-width: 166px;
+  }
+  .phone-item {
+    display: flex;
+    column-gap: 50px;
+    margin-bottom: 15px;
+    text-align: left;
+
+    & > :first-child {
+      min-width: 56px;
     }
   }
+}
 
-  /* contact email phone */
+/* newsletter */
 
-  .contact-phone-email {
-    grid-area: contact-phone-email;
-    padding-left: 0;
-
-    .footer-title {
-      &:nth-child(1) {
-        margin-bottom: 27px;
-      }
-
-      &:nth-child(3) {
-        margin-bottom: 25px;
-      }
-    }
-    .phone-item {
-      display: flex;
-      column-gap: 50px;
-      margin-bottom: 15px;
-      text-align: left;
-
-      & > :first-child {
-        min-width: 56px;
-      }
-    }
+.newsletter {
+  .footer-title {
+    margin-bottom: 16px;
   }
 
-  /* newsletter */
-
-  .newsletter {
-    grid-area: newsletter;
-
-    .footer-title {
-      margin-bottom: 16px;
-    }
-
-    .newsletter-input {
-      display: none;
-    }
-  }
-
-  // contact-social
-
-  .contact-social {
-    grid-area: contact-social;
-  }
-
-  .programmation {
-    grid-area: programmation;
-    border-top: 0;
-  }
-
-  .btn-programme {
-    grid-area: btn-programme;
+  .newsletter-input {
     display: none;
   }
+}
 
-  .mc2 {
-    grid-area: mc2;
-  }
+/* programmtion */
 
-  /* production */
+.programmation {
+  border-top: 0;
+}
 
-  .production {
-    grid-area: production;
-    border-top: 0;
-    padding-bottom: 0;
-  }
+/* btn-programme */
 
-  /* public */
+.btn-programme {
+  display: none;
+}
 
-  .public {
-    grid-area: public;
-  }
+/* production */
 
-  /* pratiue */
+.production {
+  border-top: 0;
+  padding-bottom: 0;
+}
 
-  .pratique {
-    grid-area: pratique;
-  }
+/* nentions legales */
 
-  .user {
-    grid-area: user;
-  }
-
-  /* cgv */
-
-  .cgv {
-    grid-area: cgv;
-  }
-
-  .mention-legales {
-    grid-area: mention-legales;
-    display: flex;
-    column-gap: 25px;
-  }
+.mention-legales {
+  display: flex;
+  column-gap: 25px;
 }
 
 @media (min-width: 992px) {
@@ -195,12 +145,6 @@
     border-top: 1px solid #222222;
     border-bottom: 1px solid #222222;
 
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-      "footer-logo grid-column-left grid-column-middle grid-column-right"
-      "cgv cgv mention-legales mention-legales";
-
     .grid-column-left,
     .grid-column-middle,
     .grid-column-right {
@@ -208,7 +152,7 @@
       padding-inline: 20px;
     }
 
-    // footer logo
+    /* footer logo */
 
     .footer-logo {
       padding-top: 0;
@@ -268,26 +212,9 @@
       padding-top: 0;
     }
 
-    /* public */
-
-    .public {
-      grid-area: public;
-    }
-
-    /* pratiue */
-
-    .pratique {
-      grid-area: pratique;
-    }
-
-    .user {
-      grid-area: user;
-    }
-
     /* cgv */
 
     .cgv {
-      grid-area: cgv;
       padding-block: 34px;
 
       p {
@@ -300,17 +227,10 @@
     }
 
     .mention-legales {
-      grid-area: mention-legales;
       display: flex;
       column-gap: 25px;
       padding-block: 34px;
       padding-left: 20px;
     }
-  }
-}
-
-@media (min-width: 1440px) {
-  .footer-grid {
-    grid-template-columns: 225px 360px 360px 300px;
   }
 }

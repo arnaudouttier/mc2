@@ -1,11 +1,10 @@
 /* Main edito */
 
 #main {
-  display: grid;
-  grid-template-columns: min(90vw, 1320px);
-  justify-content: center;
-
   &.edito {
+    display: grid;
+    grid-template-columns: min(90vw, 1320px);
+    justify-content: center;
     padding-top: 60px;
     padding-bottom: 75px;
     color: #000000;

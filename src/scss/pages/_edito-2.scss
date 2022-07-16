@@ -1,13 +1,13 @@
 // #MAIN
 
 #main {
-  display: grid;
-  grid-template-columns: min(90vw, 1320px);
-  justify-content: center;
-  color: #000000;
-  overflow: hidden;
-
   &.edito {
+    display: grid;
+    grid-template-columns: min(90vw, 1320px);
+    justify-content: center;
+    color: #000000;
+    overflow: hidden;
+    
     .grid-cl-left-title {
       font-weight: 600;
       font-size: 12px;
