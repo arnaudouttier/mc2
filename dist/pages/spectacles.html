@@ -109,37 +109,40 @@
     <main id="main" class="spectacles">
       <div class="grid">
         <section class="grid-cl-left">
-          <h3 class="grid-cl-left-title">Informations pratiques</h3>
+          <div class="info-pratiques-block">
+            <h4 class="info-pratiques-title">Informations pratiques</h4>
 
-          <div class="grid-cl-left-item">
-            <h4>Télécharger</h4>
-            <ul>
-              <li>La revue de presse</li>
-              <li>La feuille de salle</li>
-            </ul>
-          </div>
-          <!-- .grid-cl-left-item -->
+            <div class="info-pratiques-item">
+              <h5>Télécharger</h5>
+              <ul>
+                <li>La revue de presse</li>
+                <li>La feuille de salle</li>
+              </ul>
+            </div>
+            <!-- info-pratiques-item-->
 
-          <div class="grid-cl-left-item">
-            <h4>Préparer votre venue</h4>
-            <ul>
-              <li>Horaires</li>
-              <li>La cantine</li>
-              <li>Premier spectacle</li>
-              <li>Comment venir</li>
-            </ul>
-          </div>
-          <!-- .grid-cl-left-item -->
+            <div class="info-pratiques-item">
+              <h5>Préparer votre venue</h5>
+              <ul>
+                <li>Horaires</li>
+                <li>La cantine</li>
+                <li>Premier spectacle</li>
+                <li>Comment venir</li>
+              </ul>
+            </div>
+            <!-- info-pratiques-item -->
 
-          <div class="grid-cl-left-item">
-            <h4>Text libre</h4>
-            <p>
-              Lorem ipsum dolor sit amet. Et sequi eius aut saepe enim sed sint
-              esse et officia eligendi hic dignissimos sint vel fuga fuga aut
-              quas sunt.Lien
-            </p>
+            <div class="info-pratiques-item">
+              <h5>Text libre</h5>
+              <p>
+                Lorem ipsum dolor sit amet. Et sequi eius aut saepe enim sed
+                sint esse et officia eligendi hic dignissimos sint vel fuga fuga
+                aut quas sunt.Lien
+              </p>
+            </div>
+            <!-- info-pratiques-item -->
           </div>
-          <!-- .grid-cl-left-item -->
+          <!-- info-pratiques-block-->
 
           <div class="contact-social">
             <h4>Réseaux sociaux</h4>
@@ -188,7 +191,9 @@
             chargés d’histoires profondément enfouies.
           </p>
 
-          <ul class="block-list">
+          <div class="info-techniques-block">
+            <h4>Information techniques</h4>
+
             <li class="block-list-item programme">
               <h5 class="block-list-title">Programme</h5>
               <div class="block-list-content">
@@ -200,9 +205,9 @@
                 </p>
               </div>
             </li>
-            <!-- block-list-item -->
+            <!-- block-list-item programme -->
 
-            <li class="block-list-item distributions">
+            <div class="block-list-item distributions">
               <h5 class="block-list-title">Distributions</h5>
 
               <div class="block-list-content">
@@ -211,27 +216,22 @@
                   <li>David Houri</li>
                   <li>Lula Hugot</li>
                 </ul>
-                <!-- block-list-content-items -->
-
                 <ul class="block-list-content-items">
                   <li>Françoise Thuriès</li>
                   <li>Ismaël Tifouche</li>
                   <li>Nieto Marie Tirmont</li>
                 </ul>
-                <!-- block-list-content-items -->
-
                 <ul class="block-list-content-items">
                   <li>Françoise Thuriès</li>
                   <li>Ismaël Tifouche</li>
                   <li>Nieto Marie Tirmont</li>
                 </ul>
-                <!-- block-list-content-items -->
               </div>
               <!-- block-list-content -->
-            </li>
-            <!-- block-list-item distributions-->
+            </div>
+            <!-- block-list-item distributions -->
 
-            <li class="block-list-item generique">
+            <div class="block-list-item generique">
               <h5 class="block-list-title">Générique</h5>
 
               <div class="block-list-content">
@@ -242,39 +242,39 @@
                   </li>
                   <li>
                     <h6>Assistante à la mise en scène</h6>
-                    <span>Joséphine Lévy</span>
+                    <p>Joséphine Lévy</p>
                   </li>
                   <li>
                     <h6>Chorégraphe</h6>
-                    <span>Sonia Al Khadir</span>
+                    <p>Sonia Al Khadir</p>
                   </li>
                   <li>
                     <h6>Scénographe</h6>
-                    Salma Bordes
+                    <p>Salma Bordes</p>
                   </li>
                   <li>
                     <h6>Créatrice lumière</h6>
-                    <span>Jennifer Montesantos</span>
+                    <p>Jennifer Montesantos</p>
                   </li>
                   <li>
                     <h6>Créateur sonore</h6>
-                    <span>Fabio Meschini</span>
+                    <p>Fabio Meschini</p>
                   </li>
                   <li>
                     <h6>Costumière</h6>
-                    <span>Pétronille Salomé</span>
+                    <p>Pétronille Salomé</p>
                   </li>
                   <li>
                     <h6>Cidéaste</h6>
-                    <span>Olivier Bémer</span>
+                    <p>Olivier Bémer</p>
                   </li>
                   <li>
                     <h6>Décor</h6>
-                    <span>Les ateliers du Préau</span>
+                    <p>Les ateliers du Préau</p>
                   </li>
                   <li>
                     <h6>Administratrice de production</h6>
-                    <span>Elsa Brès</span>
+                    <p>Elsa Brès</p>
                   </li>
                   <button class="btn btn-show-more">
                     Afficher
@@ -286,20 +286,18 @@
                 <!-- block-list-content-items -->
               </div>
               <!-- block-list-content -->
-            </li>
+            </div>
             <!-- block-list-item generique -->
 
-            <li class="block-list-item mentions">
+            <div class="block-list-item mentions">
               <h5 class="block-list-title">Mentions</h5>
 
               <div class="block-list-content">
                 <ul class="block-list-content-items">
                   <li>
                     <div class="block-list-image">
-                      <img src="/edito-hexagone.4a587bdc.png" alt="edito mention image">
+                      <img src="/edito-jour-j.a7945b0e.png" alt="edito mention image">
                     </div>
-                    <!-- block-list-image -->
-
                     <div class="block-list-content-main">
                       <h5>It dignissimos eveniet ea magnam</h5>
                       <p class="bl-content-mobile">
@@ -311,15 +309,12 @@
                         pariatur est illum expedita et atque corrupti.
                       </p>
                     </div>
-                    <!-- block-list-content-main -->
                   </li>
 
                   <li>
                     <div class="block-list-image">
-                      <img src="/edito-hexagone.4a587bdc.png" alt="edito mention image">
+                      <img src="/edito-jour-j.a7945b0e.png" alt="edito mention image">
                     </div>
-                    <!-- block-list-image -->
-
                     <div class="block-list-content-main">
                       <h5>It dignissimos eveniet ea magnam</h5>
                       <p class="bl-content-mobile">
@@ -331,15 +326,12 @@
                         pariatur est illum expedita et atque corrupti.
                       </p>
                     </div>
-                    <!-- block-list-content-main -->
                   </li>
 
                   <li>
                     <div class="block-list-image">
-                      <img src="/edito-hexagone.4a587bdc.png" alt="edito mention image">
+                      <img src="/edito-jour-j.a7945b0e.png" alt="edito mention image">
                     </div>
-                    <!-- block-list-image -->
-
                     <div class="block-list-content-main">
                       <h5>It dignissimos eveniet ea magnam</h5>
                       <p class="bl-content-mobile">
@@ -351,45 +343,43 @@
                         pariatur est illum expedita et atque corrupti.
                       </p>
                     </div>
-                    <!-- block-list-content-main -->
                   </li>
                 </ul>
                 <!-- block-list-content-items -->
               </div>
               <!-- block-list-content-->
-            </li>
+            </div>
             <!-- block-list-item mentions -->
-          </ul>
-          <!--block-list -->
+          </div>
+          <!--info-techniques-block -->
         </section>
         <!-- grid-cl-middle -->
 
         <section class="grid-cl-right">
-          <div class="grid-cl-right-item rencontre">
-            <div class="block-content">
-              <h2>Rencontre</h2>
+          <div class="rencontre-block">
+            <h2 class="rencontre-block-title">Rencontre</h2>
 
-              <div class="block-content-header">
-                <img src="/rencontre-1.ddf88e83.png" alt="image artiste">
-                <div class="author-date">
-                  <h3>Tamarra Al Saadi</h3>
-                  <h4>Le 12 octobre 2022</h4>
-                </div>
+            <div class="rencontre-block-header">
+              <img src="/rencontre-1.ddf88e83.png" alt="image artiste">
+              <div class="author-date">
+                <h3>Tamarra Al Saadi</h3>
+                <h4>Le 12 octobre 2022</h4>
               </div>
-              <!-- block-content-header -->
-
-              <p>
-                Lorem ipsum dolor sit amet. Et sequi eius aut saepe enim sed
-                sint esse et officia eligendi hic dignissimos sint vel fuga fuga
-                aut quas sunt.
-              </p>
-              <button class="btn">Lire la suite</button>
             </div>
-            <!-- block-content -->
-          </div>
-          <!-- grid-cl-right-item rencontre -->
+            <!-- rencontre-block-header -->
 
-          <div class="grid-cl-right-item share">
+            <p class="rencontre-block-paragraph">
+              Lorem ipsum dolor sit amet. Et sequi eius aut saepe enim sed sint
+              esse et officia eligendi hic dignissimos sint vel fuga fuga aut
+              quas sunt.
+            </p>
+            <!-- rencontre-block-header -->
+
+            <button class="btn">Lire la suite</button>
+          </div>
+          <!-- rencontre-block -->
+
+          <div class="share-block">
             <div class="share-icon">
               <button class="btn">
                 <img src="/icon-share.260c6a42.svg" alt="icone partager">
@@ -397,7 +387,7 @@
             </div>
             <h5>Partager</h5>
           </div>
-          <!-- grid-cl-right-item share -->
+          <!-- share-block -->
         </section>
         <!-- grid-cl-right -->
       </div>
