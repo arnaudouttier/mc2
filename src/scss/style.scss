@@ -6,22 +6,15 @@
 
 @use "base/global";
 
-/* Components */
+/* Components block */
 
 @use "components/site-navigation";
-@use "components/contact-social";
-@use "components/bandeau";
-@use "components/gallery";
-@use "components/cover-details";
-@use "components/edito-variant-1-block";
-@use "components/affiche-list";
 @use "components/buttons";
 @use "components/news";
 @use "components/video-saisons";
 @use "components/slider";
 @use "components/agenda";
 
-/* Components - block */
 @use "components/contact-block";
 @use "components/share-block";
 @use "components/realisation-block";
@@ -29,6 +22,12 @@
 @use "components/info-techniques-block";
 @use "components/info-pratiques-block";
 @use "components/rencontre-block";
+@use "components/gallery-list-block";
+@use "components/bandeau-block";
+@use "components/contact-social-block";
+@use "components/edito-variant-1-block";
+@use "components/affiche-list-block";
+@use "components/cover-details-block";
 
 /* Commons */
 
@@ -36,6 +35,7 @@
 @use "commons/footer";
 
 /* Layout */
+
 @use "layout/l-header";
 @use "layout/grid";
 @use "layout/l-footer";
