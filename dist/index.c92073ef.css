@@ -716,6 +716,30 @@ body {
   font-weight: 600;
 }
 
+.btn-select {
+  border: 1px solid #000;
+  position: relative;
+}
+
+.btn-select:after {
+  content: url("icon-btn-select.f6c948c7.svg");
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translate(0, -50%);
+}
+
+.btn-select select {
+  appearance: none;
+  width: 100%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-right: 100px;
+  padding: 16px 18px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
 .news {
   color: #000;
   grid-template-columns: min(90vw, 1320px);
