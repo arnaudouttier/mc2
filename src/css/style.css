@@ -699,14 +699,29 @@ body {
   display: grid;
   grid-template-columns: min(90vw, 1320px);
   justify-content: center;
-  padding: 60px 0 30px 0;
+  padding-top: clamp(61px, 3.8125rem + (1vw - 3.75px) * 4.6009, 110px);
+  padding-bottom: clamp(29px, 1.8125rem + (1vw - 3.75px) * 9.2958, 128px);
   color: #000000;
-  /* news global */
 }
-.news .section-title {
-  margin-bottom: 64px;
+
+.news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: clamp(64px, 4rem + (1vw - 3.75px) * 3.7559, 104px);
+}
+.news-header .news-section-title {
   font-weight: 700;
   font-size: 36px;
+}
+.news-header button {
+  display: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  text-align: right;
+  text-decoration-line: underline;
 }
 
 .news-thumb {
@@ -751,7 +766,9 @@ body {
 .news-image-type .news-image-type-item {
   margin-bottom: 38px;
 }
-.news-image-type .news-image-type-item .news-category, .news-image-type .news-image-type-item img, .news-image-type .news-image-type-item .news-title {
+.news-image-type .news-image-type-item .news-category,
+.news-image-type .news-image-type-item img,
+.news-image-type .news-image-type-item .news-title {
   margin-bottom: 11px;
 }
 .news-image-type .news-image-type-item .news-category {
@@ -770,6 +787,7 @@ body {
   line-height: 24px;
 }
 
+/* btn-news-show-all */
 .btn-news-show-all {
   grid-area: btn-news-show-all;
 }
@@ -782,7 +800,9 @@ body {
 .news-text-type .news-text-type-item {
   margin-bottom: 40px;
 }
-.news-text-type .news-text-type-item .news-category, .news-text-type .news-text-type-item img, .news-text-type .news-text-type-item .news-title {
+.news-text-type .news-text-type-item .news-category,
+.news-text-type .news-text-type-item img,
+.news-text-type .news-text-type-item .news-title {
   margin-bottom: 11px;
 }
 .news-text-type .news-text-type-item .news-category {
@@ -809,6 +829,9 @@ body {
     gap: 0px 40px;
     grid-auto-flow: row;
     grid-template-areas: "news-thumb news-image-type" "news-thumb news-image-type" ". news-text-type";
+  }
+  .news-header button {
+    display: block;
   }
   .btn-news-show-all {
     display: none;

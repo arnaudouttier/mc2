@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <div class="bandeau">
+  <div id="bandeau" class="bandeau">
     <div class="bandeau-inner">
       <div class="bandeau-left">
         <h4>Fermé aujourd'hui</h4>
@@ -195,7 +195,13 @@
     <!-- .agenda -->
 
     <section class="news">
-      <h3 class="section-title">Actualités</h3>
+      <div class="news-header">
+        <h3 class="news-section-title">Actualités</h3>
+        <a href="">
+          <button class="btn">Tout voir</button>
+        </a>
+      </div>
+      <!-- news-header -->
 
       <div class="news-grid">
         <section class="news-thumb">
@@ -423,10 +429,12 @@
 
   <footer id="site-footer">
     <div class="to-top">
-      <button class="btn btn-to-top">
-        <img src="/icon-to-top.4b0b7b4f.svg" alt="icone vers le haut">
-        RETOUR HAUT DE PAGE
-      </button>
+      <a href="#bandeau">
+        <button class="btn btn-to-top">
+          <img src="/icon-to-top.4b0b7b4f.svg" alt="icone vers le haut">
+          RETOUR HAUT DE PAGE
+        </button>
+      </a>
     </div>
     <!-- .top-top -->
 
