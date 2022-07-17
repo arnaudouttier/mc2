@@ -35,18 +35,38 @@
   }
 
   .block-main {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 59px;
+    .block-main-header {
+      margin-bottom: 20px;
 
-    .block-main-content {
-      max-width: 420px;
+      button {
+        display: none;
+      }
+    }
 
-      .block-main-content-paragraph {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        margin-bottom: 28px;
+    .block-main-content-paragraph {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 28px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .edito-variant-1-block {
+    .block-main {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 59px;
+
+      .block-main-header {
+        button {
+          display: block;
+        }
+      }
+
+      .block-main-content {
+        max-width: 420px;
       }
     }
   }

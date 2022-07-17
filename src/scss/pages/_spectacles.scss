@@ -11,6 +11,13 @@
     padding-bottom: 52px;
   }
 
+  .grid-cl-left {
+    .contact-social {
+      display: none;
+      border-bottom: 1px solid #d9d9d9;
+    }
+  }
+
   .grid-cl-middle {
     h2 {
       font-weight: 700;
@@ -23,144 +30,25 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 24px;
-      margin-bottom: 6px;
+      margin-bottom: 35px;
     }
 
-    .block-list {
-      .block-list-item {
-        font-weight: 400;
-        font-size: 16px;
+    .info-techniques-block {
+      h4 {
+        display: none;
+      }
 
-        &:last-child {
-          .block-list-content {
-            border-bottom: 0;
-          }
-        }
-
-        h5 {
-          padding-block: 29px;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 24px;
-        }
-
-        .block-list-content {
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 24px;
-          padding-block: 29px;
-          border-top: 1px solid #d9d9d9;
-          border-bottom: 1px solid #d9d9d9;
-
-          h6 {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-          }
-        }
-
-        &.programme {
-          display: none;
-        }
-
-        &.distributions {
-          .block-list-content-items {
-            &:not(:last-child) {
-              margin-bottom: 19px;
-            }
-          }
-        }
-
-        &.generique {
-          .block-list-content {
-            border-bottom: 0;
-            padding-bottom: 0;
-          }
-
-          .block-list-content-items {
-            li {
-              margin-bottom: 19px;
-
-              span {
-                display: block;
-              }
-            }
-          }
-
-          .btn-show-more {
-            padding: 5px 20px;
-            background-color: #f4f4f4;
-            color: #9d9d9d;
-            font-weight: 600;
-            font-size: 12px;
-            letter-spacing: 2px;
-            line-height: 17px;
-            text-transform: uppercase;
-            column-gap: 11px;
-            margin-top: clamp(
-              29px,
-              calc(1.8125rem + ((1vw - 3.75px) * 0.4695)),
-              34px
-            );
-            transition: all 0.2s ease;
-
-            &:hover {
-              background-color: #071f5b;
-              color: #ffffff;
-
-              svg {
-                path {
-                  fill: #ffffff;
-                }
-              }
-            }
-          }
-        }
-
-        &.mentions {
-          .block-list-content-items {
-            display: flex;
-            column-gap: 20px;
-            overflow-x: auto;
-            scroll-behavior: smooth;
-
-            li {
-              flex-shrink: 0;
-              flex-basis: 120px;
-
-              .block-list-image {
-                max-width: 120px;
-                max-height: 120px;
-                background-color: #f6f6f6;
-                flex-shrink: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 10px;
-                flex-basis: 120px;
-              }
-
-              h5 {
-                display: none;
-                margin-bottom: 10px;
-                font-weight: 400;
-                font-size: 16px;
-              }
-
-              p {
-                font-weight: 400;
-                font-size: 13px;
-                color: #9d9d9d;
-                max-width: 408px;
-
-                &.bl-content-desktop {
-                  display: none;
-                }
-              }
-            }
-          }
+      .distributions {
+        .block-list-title {
+          padding-top: 0;
         }
       }
+    }
+  }
+
+  .grid-cl-right {
+    .contact-social {
+      border-bottom: 1px solid #d9d9d9;
     }
   }
 }
@@ -201,9 +89,22 @@
       padding-top: 0;
       padding-bottom: 70px;
 
+      .grid-cl-left {
+        .contact-social {
+          display: block;
+          border-bottom: 0;
+        }
+      }
+
       .grid-cl-middle {
         .grid-cl-middle-content {
           margin-bottom: 68px;
+
+          .info-techniques-block {
+            h4 {
+              display: block;
+            }
+          }
         }
 
         .block-list {
@@ -314,6 +215,12 @@
               }
             }
           }
+        }
+      }
+
+      .grid-cl-right {
+        .contact-social {
+          display: none;
         }
       }
     }
