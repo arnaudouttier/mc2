@@ -1,67 +1,52 @@
-// edito-variant-1-block
+/* edito-variant-1-block */
 
-.edito-variant-1-block{
+.edito-variant-1-block {
   color: #000000;
   margin-bottom: 60px;
 
-  .block-thumbnail{
+  .block-thumbnail {
     margin-bottom: 42px;
   }
 
-  .block-main-header{
-    h3{
+  .block-main-header {
+    h3 {
       font-weight: 700;
       font-size: 20px;
+      line-height: 28px;
       margin-bottom: 5px;
     }
 
-    .block-main-header-author{
+    .block-main-header-author {
       margin-bottom: 26px;
 
-      h4{
+      h4 {
         font-weight: 700;
         font-size: 16px;
-        line-height: 24px;       
+        line-height: 24px;
       }
+    }
+
+    button {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #071f5b;
     }
   }
 
-  .block-main{
+  .block-main {
     display: flex;
     justify-content: space-between;
-    column-gap: 60px;
-  
-    .block-main-content{
+    column-gap: 59px;
+
+    .block-main-content {
       max-width: 420px;
-     
-      p{
+
+      .block-main-content-paragraph {
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-         margin-bottom: 28px;
-      }
-
-      .block-list{
-
-        li{
-          display: flex;
-          align-items: center;
-          column-gap: 48px;
-          padding-block: 13px;
-          border-top: 1px solid  #D9D9D9;
-          border-bottom: 1px solid  #D9D9D9;
-
-          &+li{
-            border-top: 0;
-          }
-        }
-
-        .block-list-date,
-        .block-list-content{
-          font-weight: 400;
-          font-size: 13px;
-          margin: 0;
-        }
+        margin-bottom: 28px;
       }
     }
   }

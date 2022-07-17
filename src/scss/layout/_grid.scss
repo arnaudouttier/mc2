@@ -10,7 +10,7 @@
   .grid-cl-left,
   .grid-cl-middle,
   .grid-cl-right {
-    padding-top: 30px;
+    padding-top: 35px;
     border-top: 1px solid #d9d9d9;
   }
 
@@ -38,5 +38,11 @@
 @media (min-width: 1440px) {
   .grid {
     grid-template-columns: 240px 720px 240px;
+
+    .grid-cl-left,
+    .grid-cl-middle,
+    .grid-cl-right {
+      padding-top: 30px;
+    }
   }
 }

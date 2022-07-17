@@ -5,16 +5,7 @@
     display: grid;
     grid-template-columns: min(90vw, 1320px);
     justify-content: center;
-    padding-top: 60px;
     padding-bottom: 75px;
     color: #000000;
-  }
-}
-
-@media (min-width: 1024px) {
-  #main {
-    &.edito {
-      padding-top: 0;
-    }
   }
 }
